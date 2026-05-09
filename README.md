@@ -4,8 +4,9 @@ Original Frame:<img width="710" height="474" alt="Screenshot 2026-05-09 at 12 55
 
 Generatively Oprimized Frame:
 
-General Steps:
-
+General Steps for Tutorial:
+1) Create a general model of the desired Object. Key components of this prototype are the desired regions that you plan to keep, remove, and connect.
+3) 
 
 This is a drone frame created using Fusion 360's generative design features and a little tutorial. I was struggling to add pictures to the last repository, so I created this one. Hopefully my files upload as I want them to. 
 

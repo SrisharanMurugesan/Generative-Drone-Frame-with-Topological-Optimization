@@ -5,8 +5,11 @@ Original Frame:<img width="710" height="474" alt="Screenshot 2026-05-09 at 12 55
 Generatively Oprimized Frame:
 
 General Steps for Tutorial:
-1) Create a general model of the desired Object. Key components of this prototype are the desired regions that you plan to keep, remove, and connect.
-3) 
+1) Create a general model of the desired Object. Key components of this prototype are the desired regions that you plan to keep, remove, and connect. <img width="816" height="522" alt="Screenshot 2026-05-10 at 2 47 45 PM" src="https://github.com/user-attachments/assets/12dc894f-0eda-4cc8-a9eb-398f0e84196a" /> I just took an APEX drone frame that I planned to optimize. This is a 7 inch drone frame that I use for a lot of my builds and I was interested to see how it would optimize.
+
+2) Design out the obstacle points (Points that you don't want to be optimized). I wanted to preserve the electronic housing, the antenna location, and the propellors/motors. I assigned new bodies to the regions that would be skipped when optimizing and I designed.<img width="624" height="420" alt="Screenshot 2026-05-10 at 2 50 14 PM" src="https://github.com/user-attachments/assets/a5e99a03-ec61-4614-9444-3f989b9e7a06" />
+
+
 
 This is a drone frame created using Fusion 360's generative design features and a little tutorial. I was struggling to add pictures to the last repository, so I created this one. Hopefully my files upload as I want them to. 
 

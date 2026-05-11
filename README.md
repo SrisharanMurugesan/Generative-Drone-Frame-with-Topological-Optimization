@@ -11,6 +11,7 @@ General Steps for Tutorial:
 
 3) Design out the preserved geometry (Points that you want to be preserved). I preserved crucial screw holes and connectors. Imperative bodies shoudl be created as a new body adn the regions to should be marked green when complete. <img width="500" height="366" alt="Screenshot 2026-05-11 at 1 09 58 PM" src="https://github.com/user-attachments/assets/c6ae45d2-ac68-4a03-8168-7c9c7da448f8" />
 
+<img width="637" height="475" alt="Screenshot 2026-05-11 at 1 14 48 PM" src="https://github.com/user-attachments/assets/9ede7f19-be2a-4de5-89fd-4d9a61cf8e1a" />
 
 This is a drone frame created using Fusion 360's generative design features and a little tutorial. I was struggling to add pictures to the last repository, so I created this one. Hopefully my files upload as I want them to. 
 

@@ -13,6 +13,17 @@ General Steps for Tutorial:
 
 <img width="637" height="475" alt="Screenshot 2026-05-11 at 1 14 48 PM" src="https://github.com/user-attachments/assets/9ede7f19-be2a-4de5-89fd-4d9a61cf8e1a" />
 
+4) Add your Load Cases, I added ones for the weight of the electronics and battery pack. I also added the load cases of the antenna and camera. Key load case is the thrust from the motors and it pulling the drone up. <img width="726" height="545" alt="Screenshot 2026-05-11 at 1 55 05 PM" src="https://github.com/user-attachments/assets/afec94cc-e184-4bdf-9f69-b3da52fe1790" /><img width="288" height="338"
+   
+6) Next, i want to state an objective of minimizing the mass of my frame, as that is my generative objective. NOTE: Explain what a safety factor is and why I chose 3.  alt="Screenshot 2026-05-11 at 1 55 47 PM" src="https://github.com/user-attachments/assets/3723a102-b071-4650-a221-eae4149979f5" />
+
+
+7) I set my manufacturing constraints as unrestrained within additive manufacturing. I am printing with a Bambu Lab A1 that can handle the 45 degree overhangs and I wish to have a 3 mm thichness to preserve the structural integrity of the design. <img width="290" height="235" alt="Screenshot 2026-05-11 at 1 57 47 PM" src="https://github.com/user-attachments/assets/56b6fa52-4287-4060-9e31-0271e9df37d5" />
+
+8) Set my material to ABS, as I will be printing with it. <img width="219" height="157" alt="Screenshot 2026-05-11 at 2 00 03 PM" src="https://github.com/user-attachments/assets/d3faa684-8e9f-4771-8a0d-4aad53c77e42" />
+
+
+
 This is a drone frame created using Fusion 360's generative design features and a little tutorial. I was struggling to add pictures to the last repository, so I created this one. Hopefully my files upload as I want them to. 
 
 Update: I am still sturggling to add pictures. Hopefully I can trouble shoot and resolve the issue soon.

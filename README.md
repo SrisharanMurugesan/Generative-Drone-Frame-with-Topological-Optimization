@@ -9,6 +9,7 @@ General Steps for Tutorial:
 
 2) Design out the obstacle points (Points that you don't want to be optimized). I wanted to preserve the electronic housing, the antenna location, and the propellors/motors. I assigned new bodies to the regions that would be skipped when optimizing and I designed.<img width="624" height="420" alt="Screenshot 2026-05-10 at 2 50 14 PM" src="https://github.com/user-attachments/assets/a5e99a03-ec61-4614-9444-3f989b9e7a06" />
 
+3) Design out the preserved geometry (Points that you want to be preserved). I preserved crucial screw holes and connectors. Imperative bodies shoudl be created as a new body adn the regions to should be marked green when complete. <img width="500" height="366" alt="Screenshot 2026-05-11 at 1 09 58 PM" src="https://github.com/user-attachments/assets/c6ae45d2-ac68-4a03-8168-7c9c7da448f8" />
 
 
 This is a drone frame created using Fusion 360's generative design features and a little tutorial. I was struggling to add pictures to the last repository, so I created this one. Hopefully my files upload as I want them to. 

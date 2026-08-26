@@ -18,7 +18,8 @@ The goal of this project was to take an existing APEX-style 7-inch drone frame a
 
 <p align="center">
   <!-- Add final generated frame image here -->
-  <img width="750" alt="Generatively Optimized Drone Frame" src="PASTE_OPTIMIZED_FRAME_IMAGE_LINK_HERE" />
+  <img width="676" height="441" alt="Screenshot 2026-08-26 at 12 56 54 AM" src="https://github.com/user-attachments/assets/f6688687-83db-433a-8be8-e6978651cde8" />
+
 </p>
 
 ---
@@ -27,19 +28,39 @@ The goal of this project was to take an existing APEX-style 7-inch drone frame a
 
 ## 1. Create the Base Model
 
+<table>
+<tr>
+
+<td width="55%" valign="top">
+
+<img width="100%" alt="Obstacle Geometry" src="https://github.com/user-attachments/assets/a5e99a03-ec61-4614-9444-3f989b9e7a06" />
+
+</td>
+
+<td width="45%" valign="top">
+
+### Base Model
+
 The first step is to create or import a general model of the object you want to optimize. The key components of this prototype are the regions that you plan to **keep, remove, and connect**.
 
-For this project, I used an APEX-style 7-inch drone frame because it is a common frame size that I use for many of my builds. I wanted to see how Fusion 360 would optimize the frame while keeping the important mounting points and structural regions.
+For this project, I used an **APEX-style 7-inch drone frame** because it is a common frame size that I use for many of my builds.
 
-<p align="center">
-  <img width="750" alt="Base Drone Frame Model" src="https://github.com/user-attachments/assets/12dc894f-0eda-4cc8-a9eb-398f0e84196a" />
-</p>
+I wanted to see how **Fusion 360** would optimize the frame while keeping the important mounting points and structural regions.
+
+</td>
+
+</tr>
+</table>
 
 ---
 
 ## 2. Create Obstacle Geometry
 
 Obstacle geometry represents the areas that Fusion 360 is **not allowed to optimize into**. These are regions that must stay clear in the final generated design.
+
+<p align="center">
+  <img width="500" alt="Obstacle Geometry" src="https://github.com/user-attachments/assets/a5e99a03-ec61-4614-9444-3f989b9e7a06" />
+</p>
 
 For this drone frame, I created obstacle geometry for:
 
@@ -50,54 +71,94 @@ For this drone frame, I created obstacle geometry for:
 
 I assigned these regions as separate bodies so Fusion 360 would skip them during the optimization process.
 
-<p align="center">
-  <img width="750" alt="Obstacle Geometry" src="https://github.com/user-attachments/assets/a5e99a03-ec61-4614-9444-3f989b9e7a06" />
-</p>
 
 ---
 
 ## 3. Create Preserved Geometry
 
-Preserved geometry represents the areas that Fusion 360 must keep in the final generated design. These regions are important because they allow the final frame to still function as a real drone frame.
+Preserved geometry defines the regions that **Fusion 360 must retain** during the generative design process. These features ensure that the optimized frame still maintains all critical mounting points and structural interfaces.
 
-For this project, I preserved:
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
 
-- Motor mounting holes
-- Screw holes
-- Structural connection points
-- Electronics mounting locations
-- Important frame connector regions
+<img width="100%" alt="Preserved Geometry on Drone Frame" src="https://github.com/user-attachments/assets/c6ae45d2-ac68-4a03-8168-7c9c7da448f8" />
 
-Each preserved region should be created as a separate body. Once assigned correctly in Fusion 360, the preserved geometry should appear green.
+<br>
+<b>Preserved Geometry</b>
+<br>
+<sub>Critical mounting and structural regions are highlighted in green.</sub>
 
-<p align="center">
-  <img width="700" alt="Preserved Geometry on Drone Frame" src="https://github.com/user-attachments/assets/c6ae45d2-ac68-4a03-8168-7c9c7da448f8" />
-</p>
+</td>
 
-<p align="center">
-  <img width="750" alt="Obstacle and Preserved Geometry Setup" src="https://github.com/user-attachments/assets/9ede7f19-be2a-4de5-89fd-4d9a61cf8e1a" />
-</p>
+<td width="50%" align="center" valign="top">
+
+<img width="100%" alt="Obstacle and Preserved Geometry Setup" src="https://github.com/user-attachments/assets/9ede7f19-be2a-4de5-89fd-4d9a61cf8e1a" />
+
+<br>
+<b>Design Space Constraints</b>
+<br>
+<sub>Preserved geometry (green) shown alongside obstacle geometry (red).</sub>
+
+</td>
+</tr>
+</table>
+
+### Preserved Features
+
+| Region | Purpose |
+|---|---|
+| **Motor Mounts** | Maintains the mounting pattern and location for each motor |
+| **Screw Holes** | Preserves required fastener locations |
+| **Structural Connections** | Ensures the generated arms remain connected to the frame |
+| **Electronics Mounts** | Retains mounting locations for flight electronics |
+| **Frame Interfaces** | Maintains critical connections between frame components |
+
+Each preserved feature was created as a **separate body** before being assigned as Preserve Geometry in Fusion 360. Once assigned, these regions appear **green** and are protected from material removal during generation.
 
 ---
-
 ## 4. Add Load Cases
 
+<table>
+<tr>
+
+<td width="42%" valign="top">
+
+<h3>Load Case Setup</h3>
+
+<p>
 Next, I added load cases to represent the major forces acting on the drone frame during flight.
-
-The load cases included:
-
-- Weight of the electronics
-- Weight of the battery pack
-- Camera load
-- Antenna load
-- Motor thrust pulling upward on the frame
-
-The most important load case was the thrust from the motors because this is one of the main forces the drone frame experiences during flight.
-
-<p align="center">
-  <img width="750" alt="Drone Frame Load Cases" src="https://github.com/user-attachments/assets/afec94cc-e184-4bdf-9f69-b3da52fe1790" />
 </p>
 
+<p><b>Applied loads included:</b></p>
+
+<ul>
+  <li><b>Electronics Weight</b> — downward force from onboard components</li>
+  <li><b>Battery Weight</b> — concentrated load from the battery pack</li>
+  <li><b>Camera Load</b> — additional payload at the camera mount</li>
+  <li><b>Antenna Load</b> — load applied at the antenna mounting location</li>
+  <li><b>Motor Thrust</b> — upward forces applied at each motor mount</li>
+</ul>
+
+<p>
+The most significant load case is <b>motor thrust</b>, since the arms must transfer the upward thrust generated by the motors into the central frame during flight.
+</p>
+
+</td>
+
+<td width="58%" align="center" valign="top">
+
+<img width="100%" alt="Drone Frame Load Cases" src="https://github.com/user-attachments/assets/afec94cc-e184-4bdf-9f69-b3da52fe1790" />
+
+<br>
+<b>Applied Flight Loads</b>
+<br>
+<sub>Force vectors applied to the preserved mounting regions of the drone frame.</sub>
+
+</td>
+
+</tr>
+</table>
 ---
 
 ## 5. Set the Generative Objective

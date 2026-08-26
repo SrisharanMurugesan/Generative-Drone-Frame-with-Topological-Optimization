@@ -2,7 +2,7 @@
 
 This project uses **Fusion 360 Generative Design** to create a lightweight, topology-optimized drone frame while preserving the important mounting points needed for a real FPV drone build.
 
-The goal of this project was to take an existing APEX-style 7-inch drone frame and use generative design to reduce mass while keeping the frame strong enough for electronics, motors, battery weight, and flight loads.
+The goal of this project was to take an existing APEX-style 7-inch drone frame and use generative design to reduce mass while keeping the frame structurally capable enough for electronics, motors, battery weight, and flight loads.
 
 ---
 
@@ -17,7 +17,6 @@ The goal of this project was to take an existing APEX-style 7-inch drone frame a
 ## Generatively Optimized Frame
 
 <p align="center">
-  <!-- Add final generated frame image here -->
   <img width="676" height="441" alt="Screenshot 2026-08-26 at 12 56 54 AM" src="https://github.com/user-attachments/assets/f6688687-83db-433a-8be8-e6978651cde8" />
 
 </p>
@@ -41,11 +40,11 @@ The goal of this project was to take an existing APEX-style 7-inch drone frame a
 
 ### Base Model
 
-The first step is to create or import a general model of the object you want to optimize. The key components of this prototype are the regions that you plan to **keep, remove, and connect**.
+The first step is to create or import a general model of the object you want to optimize. The key components of this prototype are the regions that you plan to keep, remove, and fuse.
 
-For this project, I used an **APEX-style 7-inch drone frame** because it is a common frame size that I use for many of my builds.
+For this project, I used an APEX-style 7-inch drone frame because it is a common frame size that I use for many of my builds.
 
-I wanted to see how **Fusion 360** would optimize the frame while keeping the important mounting points and structural regions.
+I wanted to learn how to use Fusion 360's generative design and was curious how Fusion would optimize the frame while keeping the important mounting points and structural regions.
 
 </td>
 
@@ -76,7 +75,7 @@ I assigned these regions as separate bodies so Fusion 360 would skip them during
 
 ## 3. Create Preserved Geometry
 
-Preserved geometry defines the regions that **Fusion 360 must retain** during the generative design process. These features ensure that the optimized frame still maintains all critical mounting points and structural interfaces.
+Preserved geometry defines the regions that **Fusion 360 must retain** during the generative design process. These features ensure that the optimized frame still maintains all critical mounting points and structural faces.
 
 <table>
 <tr>
@@ -109,12 +108,12 @@ Preserved geometry defines the regions that **Fusion 360 must retain** during th
 | Region | Purpose |
 |---|---|
 | **Motor Mounts** | Maintains the mounting pattern and location for each motor |
-| **Screw Holes** | Preserves required fastener locations |
+| **Screw Holes** | Preserves required screw holes |
 | **Structural Connections** | Ensures the generated arms remain connected to the frame |
-| **Electronics Mounts** | Retains mounting locations for flight electronics |
+| **Electronics Mounts** | Retains mounting point for electronics |
 | **Frame Interfaces** | Maintains critical connections between frame components |
 
-Each preserved feature was created as a **separate body** before being assigned as Preserve Geometry in Fusion 360. Once assigned, these regions appear **green** and are protected from material removal during generation.
+Each preserved feature was created as a **separate body** before being assigned as Preserve Geometry in Fusion 360. Once assigned, these regions appear green and are protected from material removal during generation.
 
 ---
 ## 4. Add Load Cases
@@ -163,11 +162,11 @@ The most significant load case is <b>motor thrust</b>, since the arms must trans
 
 ## 5. Set the Generative Objective
 
-For this study, my objective was to **minimize the mass** of the drone frame while still maintaining enough strength for the expected loads.
+For this study, my objective was to **minimize the mass** of the drone frame while still maintaining structural integrity for the expected loads.
 
-I used a **safety factor of 3**. A safety factor is a multiplier that helps make sure a part can handle more force than it is expected to experience during normal use. For example, a safety factor of 3 means the frame should theoretically handle three times the expected load before failing.
+I used a safety factor of 3. A safety factor is a multiplier that helps make sure a part can handle more force than it is expected to experience during normal use. For example, a safety factor of 3 means the frame should theoretically handle three times the expected load before failing.
 
-I chose a safety factor of 3 because drone frames experience vibration, crashes, hard landings, and unpredictable flight forces. Since this frame may be 3D printed, I wanted to account for material weakness, layer adhesion, and real-world testing conditions.
+I chose a safety factor of 3 because drone frames experience vibration, crashes, hard landings, and unpredictable flight forces. Since this frame may be 3D printed, I wanted to account for material weakness, layer adhesion, and real-world conditions.
 
 <p align="center">
   <img width="450" alt="Generative Objective and Safety Factor" src="https://github.com/user-attachments/assets/3723a102-b071-4650-a221-eae4149979f5" />
@@ -179,7 +178,7 @@ I chose a safety factor of 3 because drone frames experience vibration, crashes,
 
 For the manufacturing constraints, I selected an additive manufacturing setup because the frame is intended to be 3D printed.
 
-I set the manufacturing constraint as unrestricted within additive manufacturing. I planned to print this frame on a **Bambu Lab A1**, which can handle 45-degree overhangs. I also used a **3 mm minimum thickness** to help preserve the structural integrity of the design.
+I set the manufacturing constraint as unrestricted within additive manufacturing. I planned to print this frame on a Bambu Lab A1, which can handle up to 45-degree overhangs. I also used a **3 mm minimum thickness** to help preserve the structure of the design.
 
 <p align="center">
   <img width="500" alt="Additive Manufacturing Constraints" src="https://github.com/user-attachments/assets/56b6fa52-4287-4060-9e31-0271e9df37d5" />
@@ -189,9 +188,9 @@ I set the manufacturing constraint as unrestricted within additive manufacturing
 
 ## 7. Select Material
 
-I selected **ABS Plastic** as the study material because I planned to print the frame with ABS.
+I selected ABS Plastic as the study material because I planned to print the frame with ABS.
 
-ABS is a better choice than PLA for this type of drone part because it has improved toughness and better heat resistance, which is useful for FPV drone frames and outdoor testing.
+ABS is a better choice than PLA for this type of part because it has improved toughness and better heat resistance, which is useful for FPV drone frames and outdoor testing.
 
 <p align="center">
   <img width="400" alt="ABS Material Selection" src="https://github.com/user-attachments/assets/d3faa684-8e9f-4771-8a0d-4aad53c77e42" />
@@ -201,14 +200,27 @@ ABS is a better choice than PLA for this type of drone part because it has impro
 
 ## 8. Generate the Final Frame
 
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+
+<img width="70%" alt="Screenshot 2026-08-26 at 1 11 09 AM" src="https://github.com/user-attachments/assets/6165316b-8310-457a-bf65-bef1d5cf88e9" />
+
+</td>
+
+<td width="50%" align="center" valign="top">
+
+<img width="100%" alt="Screenshot 2026-08-26 at 1 11 38 AM" src="https://github.com/user-attachments/assets/9c9b15cf-1ff8-4c1d-a874-c482d90dee92"  />
+
+
+</td>
+</tr>
+</table>
+
 After setting the preserved geometry, obstacle geometry, load cases, generative objective, manufacturing constraints, and material, Fusion 360 generated the optimized drone frame.
 
 The final design removes unnecessary material while maintaining the important mounting locations and structural paths needed for the frame.
 
-<p align="center">
-  <!-- Replace this with your final generated frame image -->
-  <img width="750" alt="Final Generated Drone Frame" src="PASTE_FINAL_GENERATED_FRAME_IMAGE_LINK_HERE" />
-</p>
 
 ---
 
@@ -216,7 +228,7 @@ The final design removes unnecessary material while maintaining the important mo
 
 This repository includes files for viewing, modifying, or recreating the generative design study.
 
-Included files may contain:
+Included files contains:
 
 - Fusion 360 design files
 - Generative design study files
@@ -231,19 +243,14 @@ Included files may contain:
 
 Future improvements for this project include:
 
-- Printing and physically testing the generated frame
-- Comparing the weight of the original frame and optimized frame
 - Running additional simulation studies
 - Testing different materials such as PETG, Nylon, or Carbon Fiber Nylon
-- Improving the load case accuracy
-- Cleaning the final generated mesh
 - Adding real flight test results
 
 ---
 
-# Project Summary
+# Author's Note
 
-This project was created to explore how Fusion 360’s generative design tools can be used for drone frame optimization. By defining preserved geometry, obstacle geometry, realistic load cases, material selection, and additive manufacturing constraints, I generated a lightweight drone frame concept that keeps the important mechanical features needed for assembly.
+This project was created to explore Fusion 360’s generative design tools. By defining preserved geometry, obstacle geometry, realistic load cases, material selection, and additive manufacturing constraints, I generated a lightweight drone frame concept that keeps the important mechanical features needed for assembly.
 
-This repository acts as both a project showcase and a basic tutorial for anyone interested in using generative design for drone frames, robotics parts, or lightweight mechanical structures.
-```
+This repository acts as both a project showcase and a basic tutorial for anyone interested in using generative design for drone frames, robotics parts, or lightweight mechanical structures. This was my first experience at using gererative design and it is safe to say that I plan to continue doing so. This project acts as a learning experience for me to expand my CAD boundaries and I found it very fun. I currently have the frame on a drone and it flys really well. I hope you enjoy.

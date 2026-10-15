@@ -9,7 +9,7 @@ The goal of this project was to take an existing APEX-style 7-inch drone frame a
 ## Generatively Optimized Frame
 
 <p align="center">
-  <img width="676" height="441" alt="Screenshot 2026-08-26 at 12 56 54 AM" src="https://github.com/user-attachments/assets/f6688687-83db-433a-8be8-e6978651cde8" />
+  <img width="610" height="385" alt="Screenshot 2026-10-14 at 11 29 58 PM" src="https://github.com/user-attachments/assets/65e77bbc-9b2b-41dc-a0de-2353204db6f9" />
 
 </p>
 

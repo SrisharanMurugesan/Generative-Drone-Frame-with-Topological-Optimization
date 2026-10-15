@@ -204,7 +204,7 @@ ABS is a better choice than PLA for this type of part because it has improved to
 <tr>
 <td width="50%" align="center" valign="top">
 
-<img width="70%" alt="Screenshot 2026-08-26 at 1 11 09 AM" src="https://github.com/user-attachments/assets/6165316b-8310-457a-bf65-bef1d5cf88e9" />
+<img width="100%" alt="Screenshot 2026-10-14 at 11 31 19 PM" src="https://github.com/user-attachments/assets/5797d02c-1ba1-437b-b79c-de29454279d1" />
 
 </td>
 

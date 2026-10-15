@@ -9,7 +9,7 @@ The goal of this project was to take an existing APEX-style 7-inch drone frame a
 ## Original Frame
 
 <p align="center">
-  <img width="750" alt="Original Drone Frame" src="https://github.com/user-attachments/assets/43531aaf-f1b1-44da-aacc-84b406351cb0" />
+  <img width="750" height="410" alt="Screenshot 2026-10-14 at 11 17 39 PM" src="https://github.com/user-attachments/assets/ee1e584e-88ec-48a2-b08d-17fcbf495e0d" />" />
 </p>
 
 ---

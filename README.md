@@ -6,19 +6,19 @@ The goal of this project was to take an existing APEX-style 7-inch drone frame a
 
 ---
 
-## Original Frame
-
-<p align="center">
-  <img width="634" height="410" alt="Screenshot 2026-10-14 at 11 17 39 PM" src="https://github.com/user-attachments/assets/ee1e584e-88ec-48a2-b08d-17fcbf495e0d" />" />
-</p>
-
----
-
 ## Generatively Optimized Frame
 
 <p align="center">
   <img width="676" height="441" alt="Screenshot 2026-08-26 at 12 56 54 AM" src="https://github.com/user-attachments/assets/f6688687-83db-433a-8be8-e6978651cde8" />
 
+</p>
+
+---
+
+## Original Frame
+
+<p align="center">
+  <img width="634" height="410" alt="Screenshot 2026-10-14 at 11 17 39 PM" src="https://github.com/user-attachments/assets/ee1e584e-88ec-48a2-b08d-17fcbf495e0d" />
 </p>
 
 ---
